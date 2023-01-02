@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: firstproject
+spec:
+  replicas: 2
+  selector:
+   matchLabels:
+     proj: projectone
+  template:
+    metadata:
+      labels:
+        proj: projectone
+    spec:
+      containers:
+       - name: projpod
+         image: docops27/pipeline:v1.17
+         imagePullPolicy: Always
+         ports:
+          - containerPorts; 80

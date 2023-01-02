@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: projser
+  labels:
+    proj: projectone
+spec:
+  ports:
+    - port: 8080
+      targetPort: 90
+      nodePort: 31200
+  selector:
+    proj: projectone
+  type: LoadBalancer
