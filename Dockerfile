@@ -1,5 +1,5 @@
 FROM centos:latest
-RUN apt install -y httpd && apt install zip && apt install unzip
+RUN yum install -y httpd # apt install zip && apt install unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/creative-studio.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip creative-studio.zip
