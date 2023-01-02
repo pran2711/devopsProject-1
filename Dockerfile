@@ -5,4 +5,4 @@ WORKDIR /var/www/html/
 RUN unzip creative-studio.zip
 RUN cp -rvf creative-studio/* .
 CMD ["/usr/sbin/httpd"."-D","FOREGROUND"]
-EXPOSE 80 
+EXPOSE 80 20 
