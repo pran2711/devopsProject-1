@@ -15,6 +15,5 @@ spec:
       containers:
        - name: projpod
          image: docops27/pipeline:v1.8
-         imagePullPolicy: Always
          ports:
-          - containerPorts: 80
+          - containerPorts: "80"
