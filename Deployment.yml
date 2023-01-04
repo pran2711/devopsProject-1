@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: testit-container
-        image: docops27/pipeline:v1.8
+        image: docops27/pipeline:v1.18
         ports:
         - containerPort: 80
