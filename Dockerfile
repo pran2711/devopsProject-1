@@ -4,5 +4,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/cr
 WORKDIR /var/www/html/
 RUN unzip creative-studio.zip
 RUN cp -rvf creative-studio/* .
-CMD ["/usr/sbin/httpd"."-D","FOREGROUND"]
+#CMD ["/usr/sbin/httpd"."-D","FOREGROUND"]
 EXPOSE 80 20 
